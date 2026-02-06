@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    /*Em css comentarios usam-se essas chaves*/
+    /*estilo interno normalmente ela vem dentro do head e usa css-->*/
+            #cabecalho-um { /*para selecionar um elemento pelo id usa-se o #*/
+         background: blue;
+          }
+       #cabecalho-dois{
+        background: red;
+       }
+       .fundo-vermelho{ /*para selecionar um elemento pela classe usa-se o .*/
+        background: red;
+       }
+       p{
+        background: green;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho borde-esquerda"> <!--toda tag pode ter um id-->
+        <!--O id é um atributo que serve para identificar um elemento, ele tem que ser unico, ou seja, não pode ter mais de um elemento com o mesmo id-->
+        vai vir aqui
+    </h1>
+
+    <h1 id="cabecalho-dois" class="fundo-vermelho"> 
+    <!--O id é um atributo que serve para identificar um elemento, ele tem que ser unico, ou seja, não pode ter mais de um elemento com o mesmo id-->
+   <!--diferente do id, a class pode ser repetida em varios elementos e pode haver mais de um-->
+    vai vir aqui
+    </h1>
+    <p>
+        um texto qualquer
+    </p>
+</body>
+</html>
