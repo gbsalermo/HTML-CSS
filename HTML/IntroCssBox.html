@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        *{
+             /*padrão que o professor passou para tirar as margens e os paddings padrões do navegador, ou seja, o espaçamento interno e externo dos elementos*/
+            margin:0;
+            padding:0;
+            box-sizing: border-box; /*aqui eu defino que o tamanho do elemento deve incluir a borda e o padding, ou seja, o tamanho total do elemento será a soma do conteudo, da borda e do padding*/
+        }
+    .section-one{
+        background-color: deeppink;
+        width: 200px; /*aqui eu mexo no conteudo principal, na largura*/
+        height: 50px; /*aqui eu mexo no conteudo principal, na altura*/    
+        background-image: url(https://viajarverde.com.br/wp-content/uploads/2016/07/amazon-rainforest-wallpaper-4-810x506.jpg);
+        background-size: cover; /*aqui eu faço a imagem de fundo cobrir toda a area do elemento*/
+        background-position: center; /*aqui eu centralizo a imagem de fundo*/   
+        padding: 150px 0 0 0; /*aqui eu mexo no espaçamento interno, ou seja, o espaço entre o conteudo e a borda*/
+        border-style: solid; /*aqui eu defino o estilo da borda como sólida*/
+        border-width: 10px; /*aqui eu defino a largura da borda como 10px*/
+        border-bottom-color: firebrick; /*aqui eu defino a cor da borda como firebrick*/
+        border-top-color: yellow; /*aqui eu defino a cor da borda como yellow*/
+        border-right-color: green; /*aqui eu defino a cor da borda como green*/
+        border-left-color: blue; /*aqui eu defino a cor da borda como blue*/
+        color: #fff; /*aqui eu mexo na cor do texto*/
+        margin: 30px; /*aqui eu mexo no espaçamento externo, ou seja, o espaço entre o elemento e os outros elementos ao redor*/
+        
+    }
+    .section-two{
+        background: red;
+        width: 200px; /* mexo no conteudo principal, na largura*/
+        height: 50px; /* mexo no conteudo principal, na altura*/
+        border: 5px solid black; /*aqui eu detalho que a borda tem 5px de largura, é sólida e é preta*/
+        padding: 15px; /*aqui eu mexo no espaçamento interno, ou seja, o espaço entre o conteudo e a borda*/
+        margin: 20px; /*aqui eu mexo no espaçamento externo, ou seja, o espaço entre o elemento e os outros elementos ao redor*/
+
+    }
+
+    </style>
+</head>
+<body>
+    <section class="section-one"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eveniet, veniam? Reiciendis saepe sint labore 
+        harum laborum odit, cupiditate quasi sequi, 
+        repudiandae atque accusamus expedita, 
+        voluptatibus quam aliquid temporibus nisi tempora?</section>
+    <section class="section-two"> 2</section>
+</body>
+</html>
