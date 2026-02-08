@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*O asterisco seleciona tudo*/
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+
+        body{
+            background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mL2Y1NjJhYWY0LTVkYmItNDYwMy1hMzJiLTZlZjZjMjIzMDEzNi9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FScrpAAFnKqBVKwe2syeiOww6mfH6avq-DRHZ_uFVNw);
+            background-size: cover; /*o background size cover é usado para ajustar a imagem de fundo ao tamanho da tela, ou seja, a imagem é exibida em toda a tela*/
+            backfround-position: top center; /*o background position center é usado para centralizar a imagem de fundo, ou seja, a imagem é exibida no centro da tela*/
+        }
+
+        #heading { 
+            background: rgba(0, 0, 0, 0.7); /*o background rgba é usado para criar um fundo transparente, ou seja, o texto é exibido sobre a imagem de fundo*/
+        }
+        /*Pego todas as divs dentro do heading e ponho o display flex*/
+            #heading div { 
+                width: 80%;
+            display: flex; /*o display flex é usado para alinhar os elementos em linha, ou seja, o texto é exibido em uma única linha*/
+            justify-content: space-between; /*o justify-content center é usado para alinhar os elementos no centro, ou seja, o texto é exibido no centro da tela*/
+            margin: 0 auto;
+        }
+
+        #heading .h1{
+            /*padding-top: 15px;uso o padding top para prencher a parte superior do netflix
+            padding-left: 15px;
+           padding-bottom: 15px;*/
+            padding: 15px 0;
+            /* podia usar padding: 15px; para prencher tudo ao mesmo tempo*/
+            font-size: 16px;
+            text-transform:
+            uppercase;
+        }
+          /*Pego todo o a dentro da heding*/  
+         #heading a{
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+   <header id="heading"> 
+    <div>
+    <h1 class="h1">
+        <a href="#">Nextflix</a><!--a tag a é usada para criar um link, o href é o atributo que define o destino do link-->
+    </h1>
+    <h2 class="h1 e na direita">
+        <a href="#">Nextflix</a><!--a tag a é usada para criar um link, o href é o atributo que define o destino do link-->
+    </h2>
+    </div>
+
+   </header>
+</body>
+</html>
