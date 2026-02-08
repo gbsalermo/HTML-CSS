@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        *{
+            /*padrão*/
+        margin: 0;
+        padding: 0;    
+        }
+
+    nav{
+        background: rgba(0, 0, 0, 0.8);
+        height: 40px 0;
+    }
+         nav a {
+        /*Acima eu posso por body nav ul li a que é  o caminho para o quero mudar*/
+        color: white;
+        text-decoration: none;
+        /*Uso o font-family para escolher a fonte, tem varias opções, eu escolhi uma que é bem comum e tem em quase todos os sistemas operacionais*/
+        font-family: system-ui, -apple-system, 
+        BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue',
+        sans-serif;
+        padding: 10px 20px;
+        display: block; /*O display block é usado para fazer com que o link ocupe toda a largura do item da lista, assim fica mais fácil de clicar*/
+        text-transform: uppercase; /*O text-transform é usado para transformar o texto em maiúsculo, minúsculo ou capitalizado, eu escolhi uppercase para deixar tudo em maiúsculo*/
+    }
+
+    nav a:hover{
+        /*O hover é usado para criar um efeito quando o mouse passa por cima do elemento, eu escolhi mudar a cor de fundo para vermelho e a cor do texto para branco*/
+        background: rgba(0, 0, 0, 0.1);
+    }
+    nav {
+        display: flex; /*O display flex é usado para organizar os itens em linha, ele é muito usado para criar menus de navegação*/
+      /* justify-content: center; O justify-content é usado para alinhar os itens no centro, ele é muito usado para criar menus de navegação*/
+        align-items: center; /*O align-items é usado para alinhar os itens no centro, ele é muito usado para criar menus de navegação*/
+    }
+    nav ul{
+        display: flex; /*O display flex é usado para organizar os itens em linha, ele é muito usado para criar menus de navegação*/
+        list-style: none;
+        background: red;
+        margin-left: 0px;
+    }
+
+
+    </style>
+
+   
+</head>
+
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Produto</a></li>
+        </ul>
+
+    </nav>
+    <ul><!-- Lista não ordenada, ela fica com bolinhas -->
+        <li>Item 1</li>
+        <li>Item 2</li> 
+        <li>Item 3</li>
+    </ul>
+     <ol type="1" start="20"><!-- Lista ordenada, ela fica enumerada -->
+        <li>Item 1</li>
+        <li>Item 2</li> 
+        <li>Item 3</li>
+    </ol>
+
+    <dl><!-- Lista de definição, ela é usada para definir termos -->
+        <dt>cafe</dt><!-- Termo a ser definido -->
+        <dd>bebida preta quente</dd><!-- Definição do termo -->
+        <dt>cafe</dt><!-- Termo a ser definido -->
+        <dd>bebida preta quente</dd><!-- Definição do termo -->
+    </dl>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, quae? Quasi sit suscipit fugit voluptate voluptas provident aperiam quas! Expedita quis assumenda eveniet non fugiat magnam totam labore, autem consequuntur!
+    </p>
+    
+</body>
+</html>
