@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;/*Faz com que as bordas da tabela fiquem unidas, sem espaço entre elas. */
+        width: 800px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side:bottom; /*Posição da legenda da tabela*/;
+            text-align: left; /*Alinhamento do texto da legenda da tabela*/
+            font-size: 14px;
+            font-style: italic;
+            margin: 10px;
+        }
+        tfoot td, table th {
+            background-color: #ddd; /*Cor de fundo do rodapé da tabela*/
+        }
+        tfoot td{
+            font-style: italic;
+        }
+        .responsive-table {
+            max-width: 100%; /*Limita a largura máxima da tabela para o tamanho da tela*/
+            overflow-x: auto; /*Adiciona uma barra de rolagem horizontal se a tabela for maior que a largura da tela*/
+        }
+    </style>
+</head>
+<body>
+    <p>Olá, este é um exemplo de tabela em HTML.</p>
+    <div class="responsive-table">
+    <table> <!--Tag da tabela--> 
+        <caption>Legenda da tabela</caption> <!--Legenda da tabela-->
+        <thead> <!--Cabeçalho da tabela-->
+            <tr> <!--Linha da tabela-->
+                <!--td>Coluna 1</td> tag para coluna Célula da tabela-->
+                <th>Titulo 1</th> <!--coluna da tabela-->
+                <th>Titulo 2</th> <!--coluna da tabela-->
+                <th>Titulo 3</th> <!--coluna da tabela-->
+            </tr>
+
+        </thead>
+
+        <tbody> 
+            <tr>
+                <td>Corpo 1 </td>
+                <td>Corpo 2 </td>
+                <td>Corpo 3 </td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2"
+                >AQUI</td><!--Atributo colspan para mesclar as células da tabela, unindo as três colunas em uma única célula e rowspan para ocupar a linha de baixo-->
+                <td>Corpo 3 </td>
+            </tr>
+            <tr></tr>
+             <tr>
+                <td>Corpo 1Corpo 1Corpo 1Corpo 1Corpo 1 </td>
+                <td>Corpo 2 </td>
+                <td>Corpo 3 </td>
+            </tr>
+            
+
+        </tbody>
+
+        <tfoot>
+            <tr></tr>
+                <td colspan="2" rowspan="2"></td>
+                <td rowspan="2">TOTAL: R$500,00</td>
+            </tr>
+            </tr>
+        </tfoot>
+
+
+    </table>
+    </div>
+
+</body>
+</html>
