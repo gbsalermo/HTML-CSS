@@ -66,12 +66,29 @@ input:required{
 
 /*Pseudo-classes-not()
 
-/*Todos os paragrafos menos*/
+/*Todos os paragrafos menos
 p:not(.meio){
     color:red;
 }
-/*O inverso de um input checked*/
+/*O inverso de um input checked
 input:not(:checked) + p{
     background: blue;
-}
+}*/
 
+/*Pseudo-classes nht-child*/
+
+ul li:nth-child(2){ /*Seleciona o elemento 2 da lista, ou seja, o segundo, quarto, sexto, etc*/
+    background: lightblue;
+}
+ul li:nth-child(even){ /*Seleciona os elementos pares da lista, ou seja, o segundo, quarto, sexto, etc*/
+    background: lightblue;
+}
+ul li:nth-child(odd){ /*Seleciona os elementos ímpares da lista, ou seja, o primeiro, terceiro, quinto, etc*/
+    background: lightgoldenrodyellow;
+}
+ul li:nth-child(3n){ /*Seleciona o elemento de 3 em 3 da lista, ou seja, o segundo, quarto, sexto, etc*/
+    background: rgb(98, 109, 112);
+}
+ul li:nth-child(3n + 5){ /*Seleciona o elemento de 3 em 3 da lista começando pelo 5, ou seja, o segundo, quarto, sexto, etc*/
+    background: rgb(11, 168, 19);
+}
