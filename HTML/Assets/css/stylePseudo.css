@@ -1,64 +1,77 @@
 
+/*Pseudo-classes
 .heading{
-    transition: all 1s ease-in-out; /*Essa propriedade é usada para criar uma transição suave entre os estados normais e os estados de hover*/
+    transition: all 1s ease-in-out; /*Essa propriedade é usada para criar uma transição suave entre os estados normais e os estados de hover
 }
 
-.heading:hover{    /*Sempre que eu passar o mouse por cima do elemento com a classe heading, ele vai ficar vermelho*/
+.heading:hover{    /*Sempre que eu passar o mouse por cima do elemento com a classe heading, ele vai ficar vermelho
     color: red;
 }
 
-/*manipular links*/
+/*manipular links
 a{
     color: orange;
 }
-/*manipular links que eu não visitei ainda*/
+/*manipular links que eu não visitei ainda
 a:link{
     color: blue;
 }
-/*manipular links que eu já visitei*/
+/*manipular links que eu já visitei
 a:visited{
     color: blue;
 }
-/*hover nos links*/
+/*hover nos links
 a:hover{
     background: darkblue;
     color: white;
     text-decoration: none;
 }
-/*active, ou seja, clicavel*/
+/*active, ou seja, clicavel
 a:active{
     background: rgb(192, 235, 255);
     color: white;
     text-decoration: none;
 }
-/*input em focus, ou seja, quando o input estiver selecionado*/
+/*input em focus, ou seja, quando o input estiver selecionado
 input:focus{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     outline: none;
     border: 1px solid black;
 }
-/*input disabled*/
+/*input disabled
 input:disabled{
     background-color: rebeccapurple;
-    cursor: not-allowed; /*Cursor não permitido*/
+    cursor: not-allowed; /*Cursor não permitido
 }
-/*input enabled*/
+/*input enabled
 input:enabled{
     background-color: white;
     cursor: default;
 }
 
-input:checked + p{/*Quando o input tiver checado, o p que vem depois dele vai ficar maior*/
+input:checked + p{/*Quando o input tiver checado, o p que vem depois dele vai ficar maior
     width: 50px;
     height: 50px;
 
 }
 
-/*Selecionar o primeiro filho de uma lista*/
+/*Selecionar o primeiro filho de uma lista
 .pai .lista li:first-child{
     background: black;
 }
 
 input:required{
     background: red
+}*/
+
+/*Pseudo-classes-not()
+
+/*Todos os paragrafos menos*/
+p:not(.meio){
+    color:red;
 }
+/*O inverso de um input checked*/
+input:not(:checked) + p{
+    background: blue;
+}
+
