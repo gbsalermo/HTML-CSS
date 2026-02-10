@@ -75,20 +75,44 @@ input:not(:checked) + p{
     background: blue;
 }*/
 
-/*Pseudo-classes nht-child*/
+/*Pseudo-classes nht-child
 
-ul li:nth-child(2){ /*Seleciona o elemento 2 da lista, ou seja, o segundo, quarto, sexto, etc*/
+ul li:nth-child(2){ /*Seleciona o elemento 2 da lista, ou seja, o segundo, quarto, sexto, etc
     background: lightblue;
 }
-ul li:nth-child(even){ /*Seleciona os elementos pares da lista, ou seja, o segundo, quarto, sexto, etc*/
+ul li:nth-child(even){ /*Seleciona os elementos pares da lista, ou seja, o segundo, quarto, sexto, etc
     background: lightblue;
 }
-ul li:nth-child(odd){ /*Seleciona os elementos ímpares da lista, ou seja, o primeiro, terceiro, quinto, etc*/
+ul li:nth-child(odd){ /*Seleciona os elementos ímpares da lista, ou seja, o primeiro, terceiro, quinto, etc
     background: lightgoldenrodyellow;
 }
-ul li:nth-child(3n){ /*Seleciona o elemento de 3 em 3 da lista, ou seja, o segundo, quarto, sexto, etc*/
+ul li:nth-child(3n){ /*Seleciona o elemento de 3 em 3 da lista, ou seja, o segundo, quarto, sexto, etc
     background: rgb(98, 109, 112);
 }
-ul li:nth-child(3n + 5){ /*Seleciona o elemento de 3 em 3 da lista começando pelo 5, ou seja, o segundo, quarto, sexto, etc*/
+ul li:nth-child(3n + 5){ /*Seleciona o elemento de 3 em 3 da lista começando pelo 5, ou seja, o segundo, quarto, sexto, etc
     background: rgb(11, 168, 19);
+}*/
+
+/*Pseudo-Elementos
+ul li::after{
+    content: " - item da lista"; /*O conteúdo que vai ser adicionado depois do elemento li
+    color: red;
+}*/
+
+p::first-letter{ /*Seleciona a primeira letra do parágrafo*/
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line{ /*Seleciona a primeira linha do parágrafo*/
+    font-weight: bold;
+    color: red;
+}
+
+p::selection{ /*Seleciona o texto que for selecionado*/
+   font-size: 50px;
+   background: black;
+    color: white;   
 }
