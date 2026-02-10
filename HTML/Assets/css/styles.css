@@ -1,5 +1,82 @@
-    .caixa{
-            background: red;
-            width: 120px;
-            height: 120px;
-        }
+*{ 
+    /*padrão para não ter que fazer manualmente depois*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Seleções simples
+p{
+    /*Seleciono os paragrafos do doc
+    color: red
+}
+
+h1, p{
+    color: purple;
+}
+
+/*Aqui são seleções diferentes
+body div section p,
+body div section h1 {
+    color: darkblue
+}*/
+
+/*Selecionar por classe
+.color-red{
+    color: red;
+}
+.main-content h2{
+    font-style: italic;
+}
+/*mais de uma classe
+.main-content .heading {
+    font-style: italic;
+    color: red;
+}
+/*mais de uma classe, porém agora especificando
+.main-content h2.heading {
+    font-style: italic;
+    color: blue;
+}
+/*Ocorre uma herança nesse caso pois as divs herdam entre si por padrao
+.pai{
+    color: red;
+}
+/*Para resolver o problema da herança, basta usar a propriedade "inherit" colocando como cor initial
+div{
+    color: initial;
+}
+
+ child selector 
+.pai > .filha{
+    color: red;
+}*/
+
+
+
+/*Seletores de irmãos
+adjacent sibling selector, ou seja, o elemento que vem depois do h1, ou seja, o p
+.pai h1+p{
+    color: red;
+}
+/*Tem que ter um h1 logo depois de um p
+.pai p+h1{
+    color: yellow;
+}
+/*Todos os p's
+.pai h1~p{
+    color: blue;
+}
+
+/*Exemplo com classe
+.pai .claas1~.class2{
+    color: green;
+} 
+
+/*Selecionar por atributo
+[meu-atributo]/*pode por ="valor" para ser mais especifico{
+    color: red;
+}
+[checked]{
+    width: 50px;
+    height: 50px;
+}*/
