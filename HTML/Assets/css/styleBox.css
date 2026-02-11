@@ -48,7 +48,7 @@
 } */
 
 
-/*Unidades de medidas do css*/
+/*Unidades de medidas do css
 
 *{
     margin: 0;
@@ -67,12 +67,12 @@ p{
     font-size: 1em; /*Como se ele multiplicasse pelos px da pai, ex: 50px * 1em
     font-size: 1rem; /*O rem faz quase o mesmo do em só que ele se baseia no ambiente root, no caso a fonte do html
 }
-    */
+    
 
-/*vh e vw*/
+/*vh e vw
 .pai{
-    width: 100vw; /*vw é igual a 1/100 da viewporte, ou seja se ela for 750px o 1vw equivale a 7.5px*/
-    height: 100vh; /*vh segue o mesmo principio so que de altura*/
+    width: 100vw; /*vw é igual a 1/100 da viewporte, ou seja se ela for 750px o 1vw equivale a 7.5px
+    height: 100vh; /*vh segue o mesmo principio so que de altura
     height: 30rem;
     background: yellow;
 }
@@ -84,4 +84,22 @@ p{
 }
 .color-two{
     background: violet;
+}*/
+/*Propriedades de texto*/
+
+p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold; /*Verifique se a fonte suporta*/
+    direction: ltr;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 25px;
+    text-align: left;
+    text-decoration: underline; /*overline, line-through*/
+    text-indent: 50px; /*Cria o espaço de inicio de paragrafo*/
+    text-shadow: 2px 2px red; /*Sombra*/
+    text-transform: capitalize; /*Primeiras letras em maiusculo*/
+
 }
+
