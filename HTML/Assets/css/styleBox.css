@@ -1,0 +1,19 @@
+.texto{
+    box-sizing: border-box; 
+    background: red;
+    width: 100%;
+    height: 200px;
+    max-width: 900px; /*Da para usar a largura max. para limitar o tamanho definido em widhth*/   
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;    
+    /*overflow-y: hidden; O que passa do eixo y fica escondido
+    overflow: scroll; /*cria um rolamento interno*/
+    overflow: auto; /*só cria o rolamento interno quando o conteudo passar*/
+    margin: 0 auto; /*Faz a div ajustar no meio da tela*/
+    padding: 50px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: aliceblue;
+
+}
