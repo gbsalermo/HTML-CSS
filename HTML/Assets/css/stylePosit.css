@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+/*Position
+.pai{}
+
+.filha1, .filha2{
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 0, 0, 0);
+    margin: 10px;
+    position: static; /*Com esse comando ele não sai do lugar
+}
+
+.filha2{
+    position:fixed; /*Tem o mesmo comportamento da absolute, exceto que se rolar a pagina o elemento acompanha no mesmo lugar
+    background: rgba(255, 255, 0, 0);
+    z-index: 1; /*Camada 1
+}
+
+.filha1{
+   /* position: relative; Muda para esse elemento a regra do static*/
+    position: absolute; /*absolute pe como se mudasse o elemento de camada*/
+    /* deixar centralizado na pag
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 2; /*Camada 2
+}
+
+ul{
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky{
+    position: sticky; 
+    background: gray;
+    top: 0;
+}*/
