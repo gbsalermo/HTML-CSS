@@ -20,8 +20,8 @@
 }
 
 .filha1{
-   /* position: relative; Muda para esse elemento a regra do static*/
-    position: absolute; /*absolute pe como se mudasse o elemento de camada*/
+   /* position: relative; Muda para esse elemento a regra do static
+    position: absolute; /*absolute pe como se mudasse o elemento de camada
     /* deixar centralizado na pag
     top: 50%;
     margin-top: -150px;
@@ -40,3 +40,55 @@ ul li.sticky{
     background: gray;
     top: 0;
 }*/
+
+/*Media queries e breakpoints
+
+.grid .col{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+/*Cria uma condição como if/else que se verdadeira sobreescreve o comando
+@media (max-width: 320px){
+    .grid .col{
+        width: 100%;
+    }
+}
+@media all and (min-width: 321px) and (max-width:768px){
+    .grid .col{
+        width: 100%;
+    }
+}
+*/
+
+/*Flex-container*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: yellow;
+    height: 500px;
+}
+
+.flex-item{
+    width: 320px;
+    background: red;
+}
+
+
