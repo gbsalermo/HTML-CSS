@@ -76,19 +76,80 @@ ul li.sticky{
     box-sizing: border-box;
 }
 
-.flex-container{
+/*.flex-container{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    /*flex-direction: row;
+    justify-content: space-between;
+    /*flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: flex-start;
     background: yellow;
-    height: 500px;
+    /*height: 500px;
+    width: 200px;
 }
 
 .flex-item{
-    width: 320px;
+    /*flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 0; /*Define que eu não permito mais que meu elemento diminua
+    /*flex: 1 0 320px; Um atalho que faz o mesmo que os 3 flex acima
+    color: #fff;
+    width: 100%;
+   /* margin-bottom: 2%;
+    height: 100%;
     background: red;
+    /*margin: 10px;
+}
+/*
+.flex-item:nth-child(2){
+    flex: 10 1 320px;
+    background: purple;
+}
+.flex-item:nth-child(3){
+    align-self: flex-end;
+    background: blue;
+}
+.flex-item:nth-child(4){
+    align-self: center;
+    background: orange;
 }
 
+/*Order
+.flex-item:nth-child(1){
+   order: -1;
+}
+.flex-item:nth-child(2){
+    order: -2; /*Faz o dois vir antes do 1
+}*/
+
+
+body{
+    font-size: 24px;
+}
+
+p{
+    margin: 0 0 10px;
+}
+
+.two-columns{
+    display: flex;
+}
+
+.two-columns .col{
+    display: flex;
+    flex-direction: column;
+    background: green;
+    margin: 15px;
+    padding: 30px;
+}
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+}
+.gallery .img{
+    flex: 1 0 20%;
+    height: 50px;
+    background: blue;
+    margin: 10px;
+}
 
