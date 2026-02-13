@@ -167,7 +167,8 @@ body{
     /*grid-template-columns: repeat(3, 1fr);*/
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-rows: repeat(3, 1frl);
-    gap: 30px;
+    /* gap: 30px; */
+    /* row-gap: 30px; */
 }
 .grid div{
     background: tomato;
@@ -189,3 +190,4 @@ body{
 .grid div:nth-child(6){
     z-index: 2;
 }
+
